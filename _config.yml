@@ -1,0 +1,46 @@
+# Site settings. All page copy lives in the Markdown files, not here.
+title: Jesper Rasmussen
+tagline: Senior Game Programmer
+description: Portfolio of Jesper Rasmussen, senior game programmer.
+url: https://repsej.github.io
+baseurl: ""
+lang: en
+
+author:
+  name: Jesper Rasmussen
+
+# TODO: add your full LinkedIn URL, e.g. https://www.linkedin.com/in/your-name/
+# The LinkedIn links stay hidden until this is set.
+linkedin: ""
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+    permalink: /work/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version

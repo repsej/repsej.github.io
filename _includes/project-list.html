@@ -1,0 +1,17 @@
+{%- assign projects = site.projects | sort: "year" | reverse -%}
+{%- if include.featured -%}{%- assign projects = projects | where: "featured", true -%}{%- endif -%}
+<ol class="work-list">
+{%- for project in projects %}
+<li class="work-item">
+<span class="work-year">{{ project.year }}</span>
+<div class="work-body">
+<h3 class="work-title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+<p class="work-role">{{ project.role }}</p>
+<p class="work-desc">{{ project.description }}</p>
+{%- if project.tech %}
+<p class="work-tech">{{ project.tech | join: " / " }}</p>
+{%- endif %}
+</div>
+</li>
+{%- endfor %}
+</ol>

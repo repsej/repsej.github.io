@@ -1,0 +1,407 @@
+/* ==========================================================================
+   Tokens
+   ========================================================================== */
+
+:root {
+  --bg: #0f1113;
+  --surface: #171a1d;
+  --border: #2a2f34;
+  --text: #e6e8ea;
+  --muted: #a0a8af;
+  --accent: #7fd1b9;
+  --warn: #e8c37a;
+
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+  --measure: 68ch;
+  --wrap: 60rem;
+  --gutter: 1.5rem;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+main { flex: 1; width: 100%; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+a { color: var(--accent); text-underline-offset: 0.2em; }
+a:hover { color: var(--text); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+img, svg { max-width: 100%; height: auto; }
+
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--accent);
+  color: var(--bg);
+  z-index: 10;
+}
+.skip-link:focus { top: 0.5rem; color: var(--bg); }
+
+/* ==========================================================================
+   Site header and footer
+   ========================================================================== */
+
+.site-header { border-bottom: 1px solid var(--border); }
+
+.site-header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1.5rem;
+  padding-block: 1.1rem;
+}
+
+.site-name {
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.site-header nav a:hover { color: var(--text); }
+.site-header nav a[aria-current="page"] {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.site-footer {
+  margin-top: 5rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.site-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-block: 1.5rem;
+}
+
+/* ==========================================================================
+   Page structure
+   ========================================================================== */
+
+.placeholder-note {
+  width: fit-content;
+  margin: 2rem 0 0;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--warn);
+  color: var(--warn);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.hero { padding-block: 4.5rem 1.5rem; }
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 7vw, 4.25rem);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+.hero-role {
+  margin: 0.75rem 0 0;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+}
+
+.page-header { padding-block: 3.5rem 1rem; }
+
+.page-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  max-width: var(--measure);
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.back-link {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+.back-link a::before { content: "\2190\00a0"; }
+
+/* ==========================================================================
+   Prose (rendered Markdown)
+   ========================================================================== */
+
+.prose > * { max-width: var(--measure); }
+
+.prose h2 {
+  margin: 3rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 1.5rem;
+}
+
+.prose h3 { margin: 2rem 0 0.5rem; font-size: 1.15rem; }
+
+.prose p, .prose ul, .prose ol { margin-block: 0 1rem; }
+.prose li { margin-bottom: 0.35rem; }
+.prose li::marker { color: var(--muted); }
+
+.prose img {
+  display: block;
+  margin-block: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.prose code {
+  padding: 0.1em 0.35em;
+  background: var(--surface);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+
+.prose pre {
+  margin-block: 1.5rem;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  line-height: 1.5;
+}
+.prose pre code { padding: 0; background: none; font-size: 0.875rem; }
+.prose div.highlighter-rouge { max-width: var(--measure); }
+
+.prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin-block: 1rem 1.5rem;
+  border-collapse: collapse;
+}
+.prose th, .prose td {
+  padding: 0.6rem 1.5rem 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.prose th {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+/* Syntax highlighting */
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cp { color: var(--muted); }
+.highlight .k, .highlight .kd, .highlight .kt, .highlight .kr { color: var(--accent); }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .m, .highlight .mi, .highlight .mf { color: var(--warn); }
+
+/* ==========================================================================
+   Work list
+   ========================================================================== */
+
+.prose > .work-list { max-width: none; }
+
+.work-list { margin: 0; padding: 0; list-style: none; }
+
+.prose .work-item {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 0 1.5rem;
+  margin: 0;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.work-item:first-child { padding-top: 0.5rem; }
+
+.work-year {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+
+.prose .work-title { margin: 0; font-size: 1.2rem; line-height: 1.4; }
+.work-title a { color: var(--text); text-decoration: none; }
+.work-title a:hover { color: var(--accent); text-decoration: underline; }
+
+.prose .work-role {
+  margin: 0.1rem 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.prose .work-desc { max-width: var(--measure); margin: 0 0 0.5rem; }
+
+.prose .work-tech {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+/* ==========================================================================
+   Project case study
+   ========================================================================== */
+
+.project-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem 1.5rem;
+  margin: 2rem 0 0;
+  padding-block: 1.25rem;
+  border-block: 1px solid var(--border);
+}
+
+.project-meta dt {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.project-meta dd { margin: 0.15rem 0 0; font-size: 0.95rem; }
+
+.project-hero {
+  display: block;
+  width: 100%;
+  margin-block: 1.5rem 0;
+  border: 1px solid var(--border);
+}
+
+/* ==========================================================================
+   CV
+   ========================================================================== */
+
+.cv-contact {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.cv .prose h3 + p {
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+.cv .prose h3 + p em { font-style: normal; }
+
+/* ==========================================================================
+   Small screens
+   ========================================================================== */
+
+@media (max-width: 40rem) {
+  :root { --gutter: 1rem; }
+
+  .prose .work-item { grid-template-columns: minmax(0, 1fr); }
+  .hero { padding-top: 3rem; }
+  .page-header { padding-top: 2.5rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* ==========================================================================
+   Print (used for CV PDF export)
+   ========================================================================== */
+
+@media print {
+  :root {
+    --bg: #fff;
+    --surface: #f4f4f4;
+    --border: #bbb;
+    --text: #000;
+    --muted: #444;
+    --accent: #000;
+  }
+
+  @page { margin: 16mm; }
+
+  body { display: block; font-size: 10.5pt; line-height: 1.45; }
+
+  .site-header, .site-footer, .skip-link, .placeholder-note, .back-link { display: none; }
+
+  .wrap { max-width: none; padding: 0; }
+  .prose > * { max-width: none; }
+
+  .page-header { padding: 0 0 0.5rem; }
+  .page-header h1 { font-size: 22pt; }
+  .lede { font-size: 12pt; margin-top: 0.25rem; }
+
+  .prose h2 { margin-top: 1.25rem; padding-top: 0.5rem; font-size: 13pt; }
+  .prose h3 { margin-top: 0.75rem; font-size: 11pt; }
+
+  h2, h3 { break-after: avoid; }
+  li, pre, img, tr { break-inside: avoid; }
+
+  a { color: #000; text-decoration: none; }
+  .cv-contact a::after { content: " " attr(href); }
+}

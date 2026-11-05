@@ -1,0 +1,8 @@
+<dl class="facts">
+{%- for fact in include.facts %}
+<div>
+<dt>{{ fact.label }}</dt>
+<dd{% if fact.highlight %} class="highlight-value"{% endif %}>{% include value.html value=fact.value %}</dd>
+</div>
+{%- endfor %}
+</dl>

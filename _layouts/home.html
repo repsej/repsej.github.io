@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
-<article class="home">
+<article>
 <header class="hero">
-<h1>{{ site.title }}</h1>
-<p class="hero-role">{{ site.tagline }}</p>
+<h1>{{ page.headline }}</h1>
+{% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
 </header>
-<div class="prose">
+{% if page.facts %}{% include facts.html facts=page.facts %}{% endif %}
+<div class="prose sections">
 {{ content }}
 </div>
 </article>

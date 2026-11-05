@@ -1,0 +1,8 @@
+{%- comment -%}
+Prints a front matter value. "[Bracketed text]" is shown as a placeholder.
+Anything else is treated as inline Markdown, so links work.
+{%- endcomment -%}
+{%- assign text = include.value | append: "" -%}
+{%- assign first = text | slice: 0 -%}
+{%- if first == "[" -%}{%- unless text contains "](" -%}{%- assign is_placeholder = true -%}{%- else -%}{%- assign is_placeholder = false -%}{%- endunless -%}{%- else -%}{%- assign is_placeholder = false -%}{%- endif -%}
+{%- if is_placeholder -%}<mark>{{ text }}</mark>{%- else -%}{{ text | markdownify | remove: "<p>" | remove: "</p>" | strip }}{%- endif -%}

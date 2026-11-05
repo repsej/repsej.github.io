@@ -1,17 +1,22 @@
 ---
 title: About
-nav_order: 3
+nav_order: 1
 permalink: /about/
-description: About Jesper Rasmussen, senior game programmer.
-placeholder: true
+description: About Jesper Rasmussen, a Danish senior game programmer.
+lede: A Danish senior game programmer with more than 20 years of professional experience.
+sections: true
 ---
 
-TODO: Write a short bio covering how long you've worked in games, where you've worked and what you've shipped.
+## Background
+
+I've worked in games for more than 20 years, including at Unity, BetaDwarf and Triband.
+
+<mark>[Your career in a short paragraph: how you started, and what you've moved between]</mark>
 
 ## How I work
 
-TODO: Describe how you approach technical problems, collaborate with other disciplines and support other programmers.
+<mark>[How you approach technical problems, work with other disciplines and support other programmers]</mark>
 
-## What I'm looking for
+## Availability
 
-TODO: Describe the roles, teams or projects that interest you, or delete this section.
+I'm only available for fully remote employment. [Get in touch](/contact/)

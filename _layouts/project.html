@@ -1,19 +1,19 @@
 ---
 layout: default
 ---
-<article class="project">
+<article>
 <header class="page-header">
-<p class="back-link"><a href="{{ '/work/' | relative_url }}">All work</a></p>
-<h1>{{ page.title }}</h1>
-{% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
-<dl class="project-meta">
-{% if page.role %}<div><dt>Role</dt><dd>{{ page.role }}</dd></div>{% endif %}
-{% if page.studio %}<div><dt>Studio</dt><dd>{{ page.studio }}</dd></div>{% endif %}
-{% if page.year %}<div><dt>Year</dt><dd>{{ page.year }}</dd></div>{% endif %}
-{% if page.platforms %}<div><dt>Platforms</dt><dd>{{ page.platforms | join: ", " }}</dd></div>{% endif %}
-{% if page.tech %}<div><dt>Tech</dt><dd>{{ page.tech | join: ", " }}</dd></div>{% endif %}
-</dl>
+<p class="back-link"><a href="{{ '/projects/' | relative_url }}">All projects</a></p>
+<h1>{% include value.html value=page.title %}</h1>
+{% if page.description %}<p class="lede">{% include value.html value=page.description %}</p>{% endif %}
 </header>
+<dl class="facts">
+{% if page.role %}<div><dt>Role</dt><dd>{% include value.html value=page.role %}</dd></div>{% endif %}
+{% if page.studio %}<div><dt>Studio</dt><dd>{% include value.html value=page.studio %}</dd></div>{% endif %}
+{% if page.year %}<div><dt>Year</dt><dd>{% include value.html value=page.year %}</dd></div>{% endif %}
+{% if page.platforms %}<div><dt>Platforms</dt><dd>{% include value.html value=page.platforms %}</dd></div>{% endif %}
+{% if page.technology %}<div><dt>Technology</dt><dd>{% include value.html value=page.technology %}</dd></div>{% endif %}
+</dl>
 {% if page.image %}
 <img class="project-hero" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}">
 {% endif %}

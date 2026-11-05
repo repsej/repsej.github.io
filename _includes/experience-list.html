@@ -1,0 +1,15 @@
+{%- assign entries = site.experience | sort: "order" -%}
+<div class="experience-list">
+{%- for entry in entries %}
+<section class="experience-entry">
+<div class="experience-side">
+<h2>{% include value.html value=entry.employer %}</h2>
+<p class="experience-period">{% include value.html value=entry.period %}</p>
+</div>
+<div class="experience-main">
+<p class="experience-title">{% include value.html value=entry.job_title %}</p>
+{{ entry.content | markdownify }}
+</div>
+</section>
+{%- endfor %}
+</div>

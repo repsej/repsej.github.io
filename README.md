@@ -18,45 +18,54 @@ The site runs at <http://localhost:4000>.
 
 | To change | Edit |
 |---|---|
-| Home page | `index.md` |
-| Expertise, About, CV | `expertise.md`, `about.md`, `cv.md` |
-| Intro on the Work page | `work.md` |
-| Name, job title, LinkedIn link | `_config.yml` |
+| Homepage | `index.md` |
+| About, Expertise, Contact | `about.md`, `expertise.md`, `contact.md` |
+| Intro text on Experience or Projects | `experience.md`, `projects.md` |
+| Employers | `_experience/*.md` |
+| Projects | `_projects/*.md` |
+| Site name, job title, search description | `_config.yml` |
+
+Values in front matter can use inline Markdown, so a link can be written as `value: "[My profile](https://example.com)"`.
+
+## Replace placeholders
+
+Missing information is written as `[Bracketed text]` and shown in blue. In Markdown body text it's wrapped in `<mark>`, so remove the tags when you replace it. To list what's left:
+
+```sh
+grep -rnE '\[[^]]+\]([^(]|$)' --include='*.md' --exclude=README.md --exclude-dir=vendor .
+```
+
+Before publishing, also replace or remove `assets/images/projects/placeholder.svg` wherever it's used.
 
 ## Add a project
 
-Add a Markdown file to `_projects/`. The filename becomes the URL, so `my-game.md` is published at `/work/my-game/`.
+Add a Markdown file to `_projects/`. The filename becomes the URL, so `my-game.md` is published at `/projects/my-game/`.
 
 ```yaml
 ---
 title: My Game
-description: One sentence on the game and your main technical contribution.
-role: Senior Engine Programmer
-studio: Studio Name
-year: 2026
-platforms: [PC, PS5]
-tech: [C++, Vulkan]
-image: /assets/images/my-game.jpg
-image_alt: Describe what the screenshot shows
+description: One sentence on the project and your contribution.
+order: 1
 featured: true
+role: Your role
+studio: Studio name
+year: 2026
+platforms: PC, PS5
+technology: C++, Vulkan
+image: /assets/images/projects/my-game.jpg
+image_alt: Describe what the screenshot shows
 ---
 ```
 
-Projects are sorted by `year`, newest first. Set `featured: true` to show one on the home page. Put images in `assets/images/`.
+`order` sets the position in project lists, lowest first. `featured: true` also shows the project on the homepage. Fields you leave out are hidden, except that lists expect `studio` and `year`. Write the case study below the front matter.
 
-## Replace placeholders
+## Add an employer
 
-Find everything still to be replaced:
+Add a Markdown file to `_experience/` with `employer`, `order`, `period` and `job_title` in the front matter, and describe the work below it. `order` sets the position, lowest first. Use it to list employers newest first once dates are in.
 
-```sh
-grep -rnE "TODO|placeholder: true" --include="*.md" --include="_config.yml" . --exclude=README.md
-```
+## Save the experience page as a PDF
 
-Remove `placeholder: true` from a page to remove its "Placeholder content" banner, and delete the `sample-project-*` files once you've added real projects. The links to them in `expertise.md` need updating too.
-
-## Export the CV as a PDF
-
-Open `/cv/` in a browser and print it to PDF. Print styles remove the navigation and switch to black on white. In Chrome, turn off "Headers and footers" in the print dialog.
+Open `/experience/` in a browser and print it to PDF. Print styles remove the navigation and switch to black on white. In Chrome, turn off "Headers and footers" in the print dialog.
 
 ## Deploy
 

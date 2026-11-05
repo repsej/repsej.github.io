@@ -1,39 +1,55 @@
 ---
 title: Technical expertise
 nav_title: Expertise
-nav_order: 2
+nav_order: 4
 permalink: /expertise/
 description: Technical expertise of Jesper Rasmussen, senior game programmer.
-lede: "TODO: One sentence on where you add the most value."
-placeholder: true
+lede: "[One sentence on where you add the most value]"
+sections: true
 ---
 
-TODO: Keep each area to what you could defend in a technical interview, link it to work that proves it, then delete this line.
+## Gameplay programming
 
-## TODO: First specialty
+<mark>[What you've done in this area, and the problems you've solved]</mark>
 
-TODO: Two or three sentences on your depth in this area and the problems you've solved.
+<mark>[Links to related projects]</mark>
 
-- TODO: A specific technique, system or tool
-- TODO: A specific technique, system or tool
+## Low-level programming
 
-Seen in: [Sample Project Alpha](/work/sample-project-alpha/)
+<mark>[What you've done in this area, and the problems you've solved]</mark>
 
-## TODO: Second specialty
+<mark>[Links to related projects]</mark>
 
-TODO: Two or three sentences on your depth in this area and the problems you've solved.
+## Engine development
 
-- TODO: A specific technique, system or tool
-- TODO: A specific technique, system or tool
+<mark>[What you've done in this area, and the problems you've solved]</mark>
 
-Seen in: [Sample Project Beta](/work/sample-project-beta/)
+<mark>[Links to related projects]</mark>
+
+## UI programming
+
+<mark>[What you've done in this area, and the problems you've solved]</mark>
+
+<mark>[Links to related projects]</mark>
+
+## Tools and workflows
+
+<mark>[What you've done in this area, and the problems you've solved]</mark>
+
+<mark>[Links to related projects]</mark>
+
+## Performance optimization
+
+<mark>[What you've done in this area, and the problems you've solved]</mark>
+
+<mark>[Links to related projects]</mark>
+
+## General game development
+
+<mark>[What you've done in this area, and the problems you've solved]</mark>
+
+<mark>[Links to related projects]</mark>
 
 ## Languages and tools
 
-| Category | Experience |
-|---|---|
-| Languages | TODO |
-| Engines | TODO |
-| Graphics APIs | TODO |
-| Platforms | TODO |
-| Profiling and debugging | TODO |
+<mark>[Languages, engines, platforms and tools you'd want to be asked about]</mark>

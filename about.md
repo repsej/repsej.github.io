@@ -23,8 +23,8 @@ I also briefly worked for Unity in the editor department.
 
 ## Awards
 
-- **Js13kGames 2025:** 5th place overall of 176 entries with my game Black Cat Squadron
-- **Js13kGames 2024:** 5th place overall of 188 entries with my game The Way of the Dodo
+- **Js13kGames 2025:** 5th place overall of 176 entries with my game [Black Cat Squadron](https://onelifeleft.itch.io/black-cat-squadron-directors-cut)
+- **Js13kGames 2024:** 5th place overall of 188 entries with my game [The Way of the Dodo](https://onelifeleft.itch.io/the-way-of-the-dodo)
 - **Google Hash Code 2018:** 103rd of 5,000 teams, participated with two old friends
 
 ## Hobbies

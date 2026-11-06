@@ -380,6 +380,20 @@ mark {
 
 .prose .project-row-desc { max-width: var(--measure); margin: 0; }
 
+/* Links to other sites get a small arrow. It's drawn as an icon, so it doesn't
+   depend on the font and isn't read out by screen readers. */
+main a[href^="http"]:not([href*="repsej.github.io"])::after {
+  --external-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath d='M3 9 9 3M4 3h5v5'/%3E%3C/svg%3E");
+  content: "";
+  display: inline-block;
+  width: 0.65em;
+  height: 0.65em;
+  margin-left: 0.2em;
+  background: currentColor;
+  -webkit-mask: var(--external-icon) center / contain no-repeat;
+  mask: var(--external-icon) center / contain no-repeat;
+}
+
 /* ==========================================================================
    Project pages
    ========================================================================== */
@@ -614,4 +628,5 @@ html:has(.viewer[open]) { overflow: hidden; }
   li, pre, img, tr { break-inside: avoid; }
 
   a { color: #000; text-decoration: none; }
+  main a[href^="http"]:not([href*="repsej.github.io"])::after { display: none; }
 }

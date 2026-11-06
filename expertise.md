@@ -20,12 +20,6 @@ sections: true
 
 <mark>[Links to related projects]</mark>
 
-## Engine development
-
-<mark>[What you've done in this area, and the problems you've solved]</mark>
-
-<mark>[Links to related projects]</mark>
-
 ## UI programming
 
 <mark>[What you've done in this area, and the problems you've solved]</mark>

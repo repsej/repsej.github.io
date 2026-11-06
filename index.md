@@ -13,14 +13,13 @@ facts:
     value: Fully remote only
     highlight: true
   - label: Based in
-    value: "[Location, time zone]"
+    value: "Copenhagen, Denmark (CET/CEST)"
 ---
 
 ## Areas of experience
 
 - Gameplay programming
 - Low-level programming
-- Engine development
 - UI programming
 - Tools and workflows
 - Performance optimization

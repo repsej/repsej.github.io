@@ -6,10 +6,10 @@ description: Contact Jesper Rasmussen about fully remote game programming roles.
 lede: I'm only available for fully remote employment.
 facts:
   - label: LinkedIn
-    value: "[LinkedIn URL]"
+    value: "[linkedin.com/in/repsej/](https://www.linkedin.com/in/repsej/)"
   - label: Availability
     value: Fully remote only
     highlight: true
   - label: Based in
-    value: "[Location, time zone]"
+    value: "Copenhagen, Denmark (CET/CEST)"
 ---

@@ -1,37 +1,40 @@
 ---
-title: "WOK - the Wide Opentv Kit"
-description: "A PC reimiplementaion of the OpenTV C API.  Allowing for much faster development."
+title: "WOK - the Wide OpenTV Kit"
+description: "A PC reimplementation of the OpenTV C API that cut the time to see a code change from about 10 minutes to 10 seconds."
 order: 3
 featured: true
-role: "Idea and programming"
-studio: "NDS Denamrk"
-year: "2009"
+role: "Creator and programmer"
+studio: "NDS Denmark"
+year: "2008"
 platforms: "OpenTV & PC"
 technology: "C++, C, Cygwin, SDL, GNU Tools"
 image: /assets/images/projects/placeholder.svg
-image_alt: Placeholder for a project screenshot
 ---
 
 ## Background
 
 Developing games for the OpenTV platform was a very tedious affair.
 
-We had some old unix build servers that also would mux and send out our games on our internal tv netwok.
+We had some old Unix build servers that would also mux our games and send them out on our internal TV network. Each developer had an OpenTV developer box and a TV on their desk to see if a change was good.
 
-Each developer then had a OpenTV developer box (and a tv) on his desk to see if the change was good.
+It took about 10 minutes to see any change we made in the source code.
 
-It would take about 10 minutes to see any change we made in the source code.
+## The idea
 
-## Overview
+It occurred to me that we were just writing C code, so we could compile it locally.
 
-It occured to me that we were just writing C code that we could just compile locally.
+Getting that idea and convincing management it was worth doing were the two hardest parts. I built a small demo first to win over management and the other architects. Building WOK took about a month.
 
-So I reimplemented the OpenTV API on a PC (Cygwin and SDL) so we could compile and test our games locally in seconds instead of minutes.  We kept using the officual OpenTV header files.
+## What I built
 
-It gave much faster compile time, native execution and GDB debugging of our games.
+I reimplemented the game parts of the OpenTV API on PC, using Cygwin and SDL: visuals, audio, input and timers. Everything else, such as MPEG streams, was stubbed out.
 
-I also added input recording and deterministic replay for reproducible bug investigation.
+We kept using the official OpenTV header files. That was the whole idea: the exact same source code would build both on the slow Unix servers, for muxing to the boxes, and on a PC with WOK.
+
+That gave us compiling and testing in seconds instead of minutes, native execution, and debugging in GDB. I also added input recording and replay, for reproducing bugs.
+
+WOK was a tool for faster game development.  Games still had to be tested on the real boxes in the end.
 
 ## Results
 
-WOK was a huge success, all 20 OpenTV developers in the company used it for their daily OpenTV development.
+All 20 OpenTV developers in the company used WOK for their daily development. The tool died with the company, when NDS Denmark closed in 2011.

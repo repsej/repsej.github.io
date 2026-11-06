@@ -11,24 +11,23 @@ technology: "C++, C, Cygwin, SDL, GNU Tools"
 screenshots:
   - file: /assets/images/wok-logo.png
     alt: Redrew the logo for having some grahpics on this page
-
 ---
 
 ## Background
 
 Developing games for the OpenTV platform was a very tedious affair at NDS Denmark.
 
-We had some old Unix build servers that would also mux our games and send them out on our internal TV network. Each developer had an OpenTV developer box and a TV on their desk to see if a change was good.
+We had some old Unix build servers that would compile and broadcast our games on our internal TV network. Each developer then had an OpenTV developer box (and a TV) on their desk to see if a change was good.
 
 It took about 10 minutes to see any change we made in the source code.
 
 ## The idea
 
-It occurred to me that we were just writing C code, so why not compile and run it locally?
-
-Getting that idea and convincing others it was worth doing were the two hardest parts.
+It occurred to me one day that we were just writing C code, so why not compile and run it locally?
 
 I first built a small demo to win over management and the other architects. Building WOK took about a month.
+
+Getting that idea and convincing others it was worth doing were the two hardest parts.
 
 ## What I built
 

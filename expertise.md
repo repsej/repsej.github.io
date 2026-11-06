@@ -14,7 +14,7 @@ I was the sole programmer on [Raid Leader](/projects/project-raidleader/) and ma
 
 ## Low-level programming
 
-I did low-level debugging on Minion Masters at BetaDwarf. At NDS Denmark I helped port Unity to an interactive television platform and made a simulator of the OpenTV middleware.
+I did low-level debugging on Minion Masters at BetaDwarf. At NDS Denmark I helped port Unity to an interactive television platform and made [WOK](/projects/project-wok/), a simulator of the OpenTV middleware.
 
 ## UI programming
 
@@ -24,7 +24,7 @@ I worked on the GUI of Minion Masters and created the Unity client for [TurnHero
 
 ## Tools and workflows
 
-I maintained and developed the Unity Editor at Unity Technologies, and internal libraries and tools at FRVR. At NDS Denmark I made an OpenTV simulator to speed up development and ported the development platform from Unix to Windows/Cygwin.
+I maintained and developed the Unity Editor at Unity Technologies, and internal libraries and tools at FRVR. At NDS Denmark I made [WOK](/projects/project-wok/), an OpenTV simulator, to speed up development and ported the development platform from Unix to Windows/Cygwin.
 
 ## Performance optimization
 

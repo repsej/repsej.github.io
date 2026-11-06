@@ -52,10 +52,17 @@ studio: Studio name
 year: 2026
 platforms: PC, PS5
 technology: C++, Vulkan
-image: /assets/images/projects/my-game.jpg
-image_alt: Describe what the screenshot shows
+image: /assets/images/projects/my-game/screenshot.jpg
+screenshots:
+  - file: /assets/images/projects/my-game/screenshot.jpg
+    alt: Describe what the screenshot shows
+  - file: /assets/images/projects/my-game/clip.gif
+    thumb: /assets/images/projects/my-game/clip-still.jpg
+    alt: Describe what the clip shows
 ---
 ```
+
+`screenshots` are shown as thumbnails that open full screen when clicked. They can be images or GIFs. `thumb` is optional: use a still image for large GIFs, so the GIF only loads when it's opened and the thumbnail gets a play icon. `image` isn't shown on the page; it's the picture used when the link is shared.
 
 `order` sets the position in project lists, lowest first. `featured: true` also shows the project on the homepage. Fields you leave out are hidden, except that lists expect `studio` and `year`. Write the case study below the front matter.
 

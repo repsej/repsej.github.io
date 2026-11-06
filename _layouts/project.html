@@ -14,9 +14,7 @@ layout: default
 {% if page.platforms %}<div><dt>Platforms</dt><dd>{% include value.html value=page.platforms %}</dd></div>{% endif %}
 {% if page.technology %}<div><dt>Technology</dt><dd>{% include value.html value=page.technology %}</dd></div>{% endif %}
 </dl>
-{% if page.image %}
-<img class="project-hero" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}">
-{% endif %}
+{% if page.screenshots %}{% include gallery.html %}{% endif %}
 <div class="prose">
 {{ content }}
 </div>

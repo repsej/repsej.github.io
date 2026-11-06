@@ -384,12 +384,118 @@ mark {
    Project pages
    ========================================================================== */
 
-.project-hero {
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.75rem;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  position: relative;
+  display: block;
+  border: 1px solid var(--line);
+  transition: border-color 0.15s;
+}
+.gallery-item:hover { border-color: var(--accent); }
+
+.gallery-item img {
   display: block;
   width: 100%;
-  margin-top: 2.25rem;
-  border: 1px solid var(--line);
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
 }
+
+/* Play icon on GIFs that have a still thumbnail */
+.gallery-item.is-animated::before,
+.gallery-item.is-animated::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery-item.is-animated::before {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgb(0 0 0 / 0.7);
+}
+.gallery-item.is-animated::after {
+  width: 0.9rem;
+  height: 1rem;
+  margin-left: 0.1rem;
+  background: #fff;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+html:has(.viewer[open]) { overflow: hidden; }
+
+.viewer {
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  background: #000;
+}
+.viewer::backdrop { background: #000; }
+
+.viewer-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.viewer-loading,
+.viewer-count {
+  position: absolute;
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #fff;
+}
+.viewer-loading {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.viewer-loading[hidden] { display: none; }
+.viewer-count {
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.125rem 0.625rem;
+  background: rgb(0 0 0 / 0.7);
+}
+.viewer-count:empty { display: none; }
+
+.viewer-button {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #fff;
+  background: rgb(0 0 0 / 0.7);
+  cursor: pointer;
+}
+.viewer-button:hover { background: rgb(60 60 60 / 0.9); }
+.viewer-close { top: 1rem; right: 1rem; }
+.viewer-prev, .viewer-next { top: 50%; transform: translateY(-50%); }
+.viewer-prev { left: 1rem; }
+.viewer-next { right: 1rem; }
+.viewer.is-single .viewer-prev,
+.viewer.is-single .viewer-next { display: none; }
 
 /* ==========================================================================
    Experience
@@ -430,6 +536,7 @@ mark {
   .sections > h2 + * { margin-top: 0; }
 
   .experience-entry { grid-template-columns: minmax(0, 1fr); row-gap: 0.75rem; }
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (prefers-reduced-motion: no-preference) {

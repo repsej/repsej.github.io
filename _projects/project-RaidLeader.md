@@ -9,7 +9,13 @@ year: "2012"
 platforms: "iPhone/iPad"
 technology: "Unity & C#"
 image: /assets/images/projects/RaidLeader/realTimeStrategyChallange.jpg
-image_alt: A screenshot from the game.
+screenshots:
+  - file: /assets/images/projects/RaidLeader/epicBossfights.jpg
+    alt: Three heroes surround a boss in an arena as it erupts in a pillar of fire
+  - file: /assets/images/projects/RaidLeader/intuitiveControls.jpg
+    alt: Two creatures fire beams of flame as the player directs heroes with drawn movement lines
+  - file: /assets/images/projects/RaidLeader/realTimeStrategyChallange.jpg
+    alt: Heroes fight a serpent-like boss in a forest clearing while a tap prompt marks a blood leech
 ---
 
 ## Overview

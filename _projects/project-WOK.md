@@ -1,24 +1,27 @@
 ---
 title: "WOK"
-description: "[One sentence on the project and your contribution]"
+description: "A PC reimiplementaion of the OpenTV C API.  Allowing for much faster development."
 order: 3
 featured: true
-role: "[Your role]"
-studio: "[Studio]"
-year: "[Year]"
-platforms: "[Platforms]"
-technology: "[Languages, engine]"
+role: "Idea and programming"
+studio: "NDS Denamrk"
+year: "2009"
+platforms: "OpenTV & PC"
+technology: "C++, C, Cygwin, SDL, GNU Tools"
 image: /assets/images/projects/placeholder.svg
 image_alt: Placeholder for a project screenshot
 ---
 
 ## Overview
 
-<mark>[The game, the team and the technical context]</mark>
+
+
 
 ## My role
 
-<mark>[What you owned and who you worked with]</mark>
+I got the idea, convinced management and did it :)
+
+I used a project
 
 ## Technical challenges
 

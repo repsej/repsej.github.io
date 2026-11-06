@@ -9,7 +9,17 @@ year: "2020 to 2021"
 platforms: "Desktop and Mobile"
 technology: "Unity / C#"
 image: /assets/images/projects/TurnHero/Screen - example background 1.png
-image_alt: Placeholder for a project screenshot
+screenshots:
+  - file: /assets/images/projects/TurnHero/Screen - my overview.png
+    alt: TurnHero's main menu, with Champions of Midgard selected above a row of active games
+  - file: /assets/images/projects/TurnHero/Screen - example background 1.png
+    alt: The card game Combo Fighter in the TurnHero client, with both players' cards and decks on a table
+  - file: /assets/images/projects/TurnHero/Gif - move piece.gif
+    thumb: /assets/images/projects/TurnHero/move-piece-still.jpg
+    alt: A highlighted red game piece being moved onto a board of tiles
+  - file: /assets/images/projects/TurnHero/Git - thumb buttons.gif
+    thumb: /assets/images/projects/TurnHero/thumb-buttons-still.jpg
+    alt: Round portrait buttons offering a choice between re-rolling a die and accepting the roll
 ---
 
 ## Overview

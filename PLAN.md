@@ -14,7 +14,9 @@ The site builds cleanly and has its pages, styling, print styles and deploy work
 - [x] **Experience:** imported from the CV, newest first.
 - [ ] **Projects:** front matter, overview, role, technical challenges and results for each one.
 - [ ] **Permissions:** check that screenshots, code samples and metrics are OK to share, especially from former employers.
-- [ ] **Project images:** add real screenshots and alt text, or remove the image fields. Then delete `placeholder.svg`.
+- [x] **Screenshot viewer:** thumbnails that open full screen, for images and GIFs. Raid Leader and TurnHero are done.
+- [ ] **WOK images:** add screenshots and set its `image` field. Then delete `placeholder.svg`.
+- [ ] **TurnHero screenshots:** decide whether the real player names and third-party board game art are OK to publish.
 - [ ] **Code samples:** add a real one or delete the block. Its placeholder has no `<mark>` tag, so the deploy check won't catch it.
 - [ ] **Expertise:** intro line, area write-ups with project links, and languages and tools.
 - [ ] **About:** career summary and how you work.
@@ -23,7 +25,6 @@ The site builds cleanly and has its pages, styling, print styles and deploy work
 ## 3. Polish
 
 - [ ] Add a default PNG or JPG sharing image. The home page has none, and project pages use an SVG, which many link previews don't display.
-- [ ] Add `width` and `height` to project images so the page doesn't jump as they load.
 - [ ] Check the phone layout, and print `/experience/` to PDF to check that too.
 - [ ] Do a final edit to cut anything that doesn't need to be there.
 - [ ] Run the README's placeholder search, which should find nothing.

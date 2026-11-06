@@ -1,5 +1,6 @@
-// Opens project screenshots full screen. Without this script, each thumbnail
-// is still a plain link to its image.
+// Opens a project's screenshots in a viewer. The page only shows the first
+// thumbnail; the others stay in the page, hidden, as the viewer's list of images.
+// Without this script, the visible thumbnail is still a plain link to its image.
 (function () {
   var viewer = document.querySelector(".viewer");
   if (!viewer || typeof viewer.showModal !== "function") return;
@@ -14,7 +15,6 @@
     current = (index + links.length) % links.length;
     var link = links[current];
     loading.hidden = false;
-    image.removeAttribute("src");
     image.alt = link.querySelector("img").alt;
     image.src = link.href;
     count.textContent = links.length > 1 ? current + 1 + " / " + links.length : "";

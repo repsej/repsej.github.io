@@ -14,7 +14,7 @@ The site builds cleanly and has its pages, styling, print styles and deploy work
 - [x] **Experience:** imported from the CV, newest first.
 - [ ] **Projects:** front matter, overview, role, technical challenges and results for each one.
 - [ ] **Permissions:** check that screenshots, code samples and metrics are OK to share, especially from former employers.
-- [x] **Screenshot viewer:** thumbnails that open full screen, for images and GIFs. Raid Leader and TurnHero are done.
+- [x] **Screenshot viewer:** one thumbnail per project that opens a viewer for all its images and GIFs. Raid Leader and TurnHero are done.
 - [ ] **WOK images:** add screenshots and set its `image` field. Then delete `placeholder.svg`.
 - [ ] **TurnHero screenshots:** decide whether the real player names and third-party board game art are OK to publish.
 - [ ] **Code samples:** add a real one or delete the block. Its placeholder has no `<mark>` tag, so the deploy check won't catch it.

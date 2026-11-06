@@ -1,8 +1,8 @@
 ---
 employer: "BetaDwarf"
 order: 2
-period: "[Start] to [End]"
-job_title: "[Job title]"
+period: "2023 to 2024 (contract)"
+job_title: "Unity Game Developer (remote)"
 ---
 
-<mark>[What you owned, and what changed because of your work]</mark>
+Helped finish the reimplementation of the Steam hit Minion Masters. Worked across the game, from GUI and game logic to server side, databases, low-level debugging and optimization.

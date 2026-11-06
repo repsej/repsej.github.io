@@ -1,7 +1,7 @@
 ---
 title: "Raid Leader"
 description: "A casual take on World Of Warcraft boss raiding."
-order: 1
+order: 2
 featured: true
 role: "Programmer"
 studio: "Red Zebra Games"
@@ -13,7 +13,7 @@ image: /assets/images/projects/RaidLeader/realTimeStrategyChallange.jpg
 
 ## Overview
 
-Together with three good colleagues from the closed NDS-DK we set out to make a casual game version of the boss fights from World of Warcraft.
+Together with three good colleagues from the closed NDS Denmark we set out to make a casual game version of the boss fights from World of Warcraft.
 
 ## My role
 
@@ -29,7 +29,7 @@ Mostly learning Unity and C#.
 
 ## Results
 
-We shipped a great game that got very positive reviews from some of the biggest mobile games sites at the time.
+We shipped a great game that got very positive reviews from some of the biggest mobile games sites at the time, and an App Store rating of 4.5 / 5.
 
 ### Videos
 

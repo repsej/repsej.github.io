@@ -1,13 +1,13 @@
 ---
-title: "[Project title 2]"
-description: "[One sentence on the project and your contribution]"
-order: 2
+title: "TurnHero"
+description: "The Unity client for a new generic board games platform."
+order: 1
 featured: true
-role: "[Your role]"
-studio: "[Studio]"
-year: "[Year]"
+role: "Unity Game Developer"
+studio: "TurnHero"
+year: "2020 to 2021"
 platforms: "[Platforms]"
-technology: "[Languages, engine]"
+technology: "Unity"
 image: /assets/images/projects/placeholder.svg
 image_alt: Placeholder for a project screenshot
 ---
@@ -18,7 +18,9 @@ image_alt: Placeholder for a project screenshot
 
 ## My role
 
-<mark>[What you owned and who you worked with]</mark>
+I created the Unity client.
+
+<mark>[What else you owned and who you worked with]</mark>
 
 ## Technical challenges
 

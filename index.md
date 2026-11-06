@@ -23,7 +23,6 @@ facts:
 - UI programming
 - Tools and workflows
 - Performance optimization
-- General game development
 {: .ruled-list }
 
 ## Selected projects

@@ -1,8 +1,10 @@
 ---
-employer: "Unity"
-order: 1
-period: "[Start] to [End]"
-job_title: "[Job title]"
+employer: "Unity Technologies"
+order: 6
+period: "2016 to 2017"
+job_title: "Editor Developer"
 ---
 
-<mark>[What you owned, and what changed because of your work]</mark>
+Maintained and developed the Unity Editor.  
+
+Working with a huge code base in C# and C++.

@@ -11,7 +11,7 @@ The site builds cleanly and has its pages, styling, print styles and deploy work
 
 ## 2. Write the content
 
-- [ ] **Experience:** dates, job titles and what you owned or changed at Unity, BetaDwarf and Triband, plus any earlier employers. Then reorder newest first.
+- [x] **Experience:** imported from the CV, newest first.
 - [ ] **Projects:** front matter, overview, role, technical challenges and results for each one.
 - [ ] **Permissions:** check that screenshots, code samples and metrics are OK to share, especially from former employers.
 - [ ] **Project images:** add real screenshots and alt text, or remove the image fields. Then delete `placeholder.svg`.

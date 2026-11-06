@@ -1,5 +1,5 @@
 ---
-title: "[Project title 3]"
+title: "WOK"
 description: "[One sentence on the project and your contribution]"
 order: 3
 featured: true

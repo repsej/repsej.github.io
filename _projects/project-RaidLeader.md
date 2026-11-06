@@ -9,6 +9,7 @@ year: "2012"
 platforms: "iPhone/iPad"
 technology: "Unity & C#"
 image: /assets/images/projects/RaidLeader/realTimeStrategyChallange.jpg
+image_alt: A screenshot from the game.
 ---
 
 ## Overview

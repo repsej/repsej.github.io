@@ -2,21 +2,12 @@
 
 The site builds cleanly and has its pages, styling, print styles and deploy workflow. What's left is mostly writing: on 2026-11-06, 71 lines of content still contained placeholders.
 
-## Decisions
-
-- [x] **Years of experience:** 20+ everywhere.
-- [x] **Earlier employers:** give the ones that matter their own entries with dates and titles, drop the rest, and remove the "Other employers" entry.
-- [x] **Expertise page length:** cut "General game development" and merge any area without a project to back it up. Update the home page list to match.
-- [x] **Number of projects:** three, all featured on the home page.
 - [ ] **Which projects:** pick the three. Together they should show the range from gameplay to low-level work.
-- [x] **Author email in git history:** hide it by switching to the GitHub noreply address before the repo goes public.
 
-## 1. Fix before writing
+1) TurnHero
+2) Raid Leader
+3) WOK
 
-- [x] Use the same years figure everywhere.
-- [x] Commit the `about.md` edit.
-- [x] Add `CLAUDE.md` to `exclude` in `_config.yml`, so it can't be published at `/CLAUDE.md` if it's ever committed.
-- [x] Make the deploy fail if the built site contains `<mark>` or `placeholder.svg`.
 
 ## 2. Write the content
 

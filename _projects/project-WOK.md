@@ -1,48 +1,57 @@
 ---
 title: "WOK - the Wide OpenTV Kit"
-description: "A PC reimplementation of the OpenTV C API that cut the time to see a code change from about 10 minutes to 10 seconds."
+description: "Native PC OpenTV Development Runtime."
 order: 3
 featured: true
 role: "Creator and programmer"
 studio: "NDS Denmark"
-year: "2008"
+year: "2007"
 platforms: "OpenTV & PC"
 technology: "C++, C, Cygwin, SDL, GNU Tools"
 screenshots:
   - file: /assets/images/wok-logo.png
-    alt: Redrew the logo for having some grahpics on this page
+    alt: The WOK logo (as I remember it)
 ---
 
 ## Background
 
-Developing games for the OpenTV platform was a very tedious affair at NDS Denmark.
+Developing games for the OpenTV platform at NDS Denmark was a rather tedious affair.
 
-We had some old Unix build servers that would compile and broadcast our games on our internal TV network. Each developer then had an OpenTV developer box (and a TV) on their desk to see if a change was good.
+We had old Unix build servers that compiled our games into OpenTV bytecode and broadcast them onto our internal TV network (with MPEG magic). Each developer had an OpenTV developer box (and a TV) on their desk to see whether a change worked.
 
-It took about 10 minutes to see any change we made in the source code.
+The whole process took approximately 10 minutes from making a change in the source code to seeing the result on screen.
 
 ## The idea
 
-It occurred to me one day that we were just writing C code, so why not compile and run it locally?
+One day it occurred to me that I was just writing C code, so why not compile and run it locally on my development PC?
 
-I first built a small demo to win over management and the other architects. Building WOK took about a month.
+I built a small proof of concept to convince the other architects and management that it was feasible and worth pursuing.
 
-Getting that idea and convincing others it was worth doing were the two hardest parts.
+The resulting tool, WOK, took me about a month to build.
+
+Getting the idea and convincing others were probably the two hardest parts.
 
 ## What I built
 
-I reimplemented the game parts of the OpenTV API on PC (using Cygwin and SDL): visuals, audio, input and timers. Everything else, such as handling MPEG streams, was stubbed out.
+I reimplemented the game-related parts of the OpenTV C API on PC, using Cygwin and SDL.
 
-We kept using the official OpenTV header files. The whole idea was that the exact same source code would build both on the slow Unix servers (for running on the real boxes) and on a PC with WOK.
+This included graphics, audio, input handling, gadget tree and timers. Everything else, such as MPEG stream handling and broadcast-related functionality, was stubbed out.
 
-That gave us compiling and testing in seconds instead of minutes, native execution, and debugging with GDB.
+We continued using the official OpenTV header files. So that exactly the same game source code could be compiled for both targets:
 
-I also added input recording and replay, for reproducing bugs.
+- OpenTV boxes (build by the Unix build servers)
+- A native PC build using WOK
 
-WOK was a tool for faster game development. Games still had to be tested and release on the real boxes in the end.
+Games could now be compiled and running in seconds instead of minutes. Developers could also use normal GDB for debugging.
+
+I also added input recording and replay, which made it possible to reproduce bugs reliably by replaying exactly the same sequence of user interactions. This turned out to be particularly useful when tracking down tricky bugs.
+
+WOK was a development tool, not a replacement for the real platform. Games still had to be tested (and released) on actual OpenTV boxes.
 
 ## Results
 
-All 20 OpenTV developers in the company used WOK for their daily development.
+All 20 OpenTV developers at the company used WOK in their daily development for years.
 
-The tool died with the company, when NDS Denmark closed in 2011.
+It reduced the development feedback loop from approximately 10 minutes to 10 seconds, while making debugging considerably easier.
+
+The tool died when NDS Denmark closed in 2011.

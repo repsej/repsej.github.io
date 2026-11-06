@@ -29,7 +29,7 @@ One day it occurred to me that I was just writing C code, so why not compile and
 
 I built a small proof of concept to convince the other architects and management that it was feasible and worth pursuing.
 
-The resulting tool, WOK, took me about a month to build.
+The resulting tool, WOK, took me about a month to build (with help from some colleagues).
 
 Getting the idea and convincing others were probably the two hardest parts.
 
@@ -48,7 +48,7 @@ Games could now be compiled and running in seconds instead of minutes. Developer
 
 I also added input recording and replay, which made it possible to reproduce bugs reliably by replaying exactly the same sequence of user interactions. This turned out to be particularly useful when tracking down tricky bugs.
 
-WOK was a development tool, not a replacement for the real platform. Games still had to be tested (and released) on actual OpenTV boxes.
+WOK was a development tool, not a replacement for the real platform. Games still had to be tested and run on actual OpenTV boxes.
 
 ## Results
 

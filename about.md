@@ -15,7 +15,7 @@ I've worked in the computer games industry for more than 20 years.
 
 I started my games career with working for NDS Denmark (Visionik) for 10 years. Making casual games for the OpenTV platform (in C). I was one of the lead programmers (Software Architect). I also ran a small infrastructure department.
 
-After NDS Denmark closed I joined forces with three colleagues to form Red Zebra Games where we made the game Raid Leader.  We got great reviews for our game.
+After NDS Denmark closed I joined forces with three colleagues to form Red Zebra Games where we made the game Raid Leader. We got great reviews for our game.
 
 Since then I've worked many different places, mostly smaller indie game studios (eg. BetaDwarf and Triband)
 
@@ -29,13 +29,13 @@ I also briefly worked for Unity in the editor department.
 
 ## Hobbies
 
-- Camping
+- [Camping](/assets/images/about/meCamping.jpg)
 - Playing table tennis
-- Playing the guitar
+- [Playing the guitar](/assets/images/about/meCampingAndGuitaring.jpeg)
 - Reading (old) books
-- Painting
-- Making music
-- Making small games
+- [Painting](/assets/images/about/mePainting.jpg)
+- [Making music](https://soundcloud.com/jesper-rasmussen-16)
+- [Making small games](https://onelifeleft.itch.io/)
 
 ## Availability
 

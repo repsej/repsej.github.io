@@ -505,6 +505,22 @@ html:has(.viewer[open]) { overflow: hidden; }
 .viewer.is-single .viewer-prev,
 .viewer.is-single .viewer-next { display: none; }
 
+/* Buttons and the image count fade out unless the mouse is over the image.
+   Touchscreens have no hover, so they keep them, and keyboard users see the
+   focused button and the count. */
+.viewer-loading, .viewer-count { pointer-events: none; }
+@media (hover: hover) {
+  .viewer-button, .viewer-count { opacity: 0; }
+  .viewer:has(.viewer-image:hover, .viewer-button:hover) .viewer-button,
+  .viewer:has(.viewer-image:hover, .viewer-button:hover) .viewer-count,
+  .viewer:has(.viewer-button:focus-visible) .viewer-count,
+  .viewer-button:focus-visible { opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .viewer-button { transition: opacity 0.2s, background-color 0.15s; }
+  .viewer-count { transition: opacity 0.2s; }
+}
+
 /* ==========================================================================
    Experience
    ========================================================================== */

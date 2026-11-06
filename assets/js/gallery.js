@@ -1,23 +1,34 @@
-// Opens a project's screenshots in a viewer. The page only shows the first
-// thumbnail; the others stay in the page, hidden, as the viewer's list of images.
-// Without this script, the visible thumbnail is still a plain link to its image.
+// Opens images in a viewer on top of the page.
+//  - A project's screenshots open as a set you can browse. The page only shows
+//    the first thumbnail; the others stay in the page, hidden, as the set's list.
+//  - Any link to an image file in a page's text opens that one image.
+// Without this script, these are all still plain links to their images.
 (function () {
   var viewer = document.querySelector(".viewer");
   if (!viewer || typeof viewer.showModal !== "function") return;
 
-  var links = Array.prototype.slice.call(document.querySelectorAll(".gallery-item"));
   var image = viewer.querySelector(".viewer-image");
   var count = viewer.querySelector(".viewer-count");
   var loading = viewer.querySelector(".viewer-loading");
+  var items = [];
   var current = 0;
 
+  function toArray(list) {
+    return Array.prototype.slice.call(list);
+  }
+
+  function altText(link) {
+    var thumbnail = link.querySelector("img");
+    return thumbnail ? thumbnail.alt : link.textContent.trim();
+  }
+
   function show(index) {
-    current = (index + links.length) % links.length;
-    var link = links[current];
+    current = (index + items.length) % items.length;
+    var link = items[current];
     loading.hidden = false;
-    image.alt = link.querySelector("img").alt;
+    image.alt = altText(link);
     image.src = link.href;
-    count.textContent = links.length > 1 ? current + 1 + " / " + links.length : "";
+    count.textContent = items.length > 1 ? current + 1 + " / " + items.length : "";
   }
 
   function hideLoading() {
@@ -27,17 +38,25 @@
   image.addEventListener("load", hideLoading);
   image.addEventListener("error", hideLoading);
 
-  links.forEach(function (link, index) {
-    link.addEventListener("click", function (event) {
-      // Let ctrl- and cmd-click open the image in a new tab as usual.
-      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      event.preventDefault();
-      show(index);
-      viewer.showModal();
-    });
+  function open(set, index, event) {
+    // Let ctrl- and cmd-click open the image in a new tab as usual.
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    items = set;
+    viewer.classList.toggle("is-single", set.length < 2);
+    show(index);
+    viewer.showModal();
+  }
+
+  var gallery = toArray(document.querySelectorAll(".gallery-item"));
+  gallery.forEach(function (link, index) {
+    link.addEventListener("click", function (event) { open(gallery, index, event); });
   });
 
-  if (links.length < 2) viewer.classList.add("is-single");
+  toArray(document.querySelectorAll(".prose a[href]")).forEach(function (link) {
+    if (!/\.(jpe?g|png|gif|webp)$/i.test(link.pathname)) return;
+    link.addEventListener("click", function (event) { open([link], 0, event); });
+  });
 
   viewer.querySelector(".viewer-prev").addEventListener("click", function () { show(current - 1); });
   viewer.querySelector(".viewer-next").addEventListener("click", function () { show(current + 1); });
@@ -49,7 +68,7 @@
   });
 
   viewer.addEventListener("keydown", function (event) {
-    if (links.length < 2) return;
+    if (items.length < 2) return;
     if (event.key === "ArrowLeft") show(current - 1);
     if (event.key === "ArrowRight") show(current + 1);
   });

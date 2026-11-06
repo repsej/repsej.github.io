@@ -64,6 +64,8 @@ screenshots:
 
 The page shows the first entry in `screenshots` as a small thumbnail. Clicking it opens a viewer where you can browse them all. They can be images or GIFs. `thumb` is optional: use a still image for large GIFs, so the GIF only loads when it's opened and the thumbnail gets a play icon. `image` isn't shown on the page; it's the picture used when the link is shared.
 
+A link to an image file in any page's text also opens in the viewer, one image at a time: `[Camping](/assets/images/about/meCamping.jpg)`.
+
 `order` sets the position in project lists, lowest first. `featured: true` also shows the project on the homepage. Fields you leave out are hidden, except that lists expect `studio` and `year`. Write the case study below the front matter.
 
 ## Add an employer

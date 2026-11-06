@@ -2,8 +2,8 @@
 title: About
 nav_order: 1
 permalink: /about/
-description: About Jesper Rasmussen, a creative senior game programmer.
-lede: A creative senior game programmer with more than 20 years of experience.
+description: About Jesper Rasmussen, an experienced and creative all round game programmer.
+lede: An experienced and creative all round game programmer with more than 20 years of experience.
 sections: true
 ---
 
@@ -41,4 +41,4 @@ I also briefly worked for Unity in the editor department.
 
 ## Availability
 
-I'm only available for fully remote employment. [Get in touch](/contact/)
+I'm open to fully remote positions. [Get in touch](/contact/)

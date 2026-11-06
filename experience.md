@@ -3,7 +3,7 @@ title: Professional experience
 nav_title: Experience
 nav_order: 2
 permalink: /experience/
-description: Professional experience of Jesper Rasmussen, senior game programmer.
+description: Professional experience of Jesper Rasmussen, an experienced and creative all round game programmer.
 lede: More than 20 years of professional game development.
 ---
 

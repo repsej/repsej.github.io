@@ -1,37 +1,24 @@
 # Portfolio plan
 
-The site builds cleanly and has its pages, styling, print styles and deploy workflow. What's left is mostly writing: on 2026-11-06, 71 lines of content still contained placeholders.
+Status on 2026-11-06: the site builds, the deploy check passes, and no placeholders are left. What remains is a few fixes, final checks and going live.
 
-- [ ] **Which projects:** pick the three. Together they should show the range from gameplay to low-level work.
+## 1. Fix before launch
 
-1) TurnHero
-2) Raid Leader
-3) WOK
+- [ ] **TurnHero quote:** it has "compeditors" and "beatiful": fix them or keep it word for word.
+- [ ] **Sharing image:** the Home and WOK pages have none. Add a default PNG or JPG, and set `image` on WOK.
+- [ ] **CV PDF:** stop calling WOK a simulator, fix the typos ("reimplantation", "an simulator", "Lead", "5'th") and the title that says "(only linkedin)", then re-export it to `assets/jesper-rasmussen-cv.pdf`.
+- [ ] **Prototyping:** the home page lists it, but Expertise has no section for it. Add one or remove it from the list.
 
+## 2. Final checks
 
-## 2. Write the content
-
-- [x] **Experience:** imported from the CV, newest first.
-- [ ] **Projects:** front matter, overview, role, technical challenges and results for each one.
-- [ ] **Permissions:** check that screenshots, code samples and metrics are OK to share, especially from former employers.
-- [x] **Screenshot viewer:** one thumbnail per project that opens a viewer for all its images and GIFs. Raid Leader and TurnHero are done.
-- [ ] **WOK images:** add screenshots and set its `image` field. Then delete `placeholder.svg`.
-- [ ] **TurnHero screenshots:** decide whether the real player names and third-party board game art are OK to publish.
-- [ ] **Code samples:** add a real one or delete the block. Its placeholder has no `<mark>` tag, so the deploy check won't catch it.
-- [ ] **Expertise:** intro line, area write-ups with project links, and languages and tools.
-- [ ] **About:** career summary and how you work.
-- [ ] **Small details:** projects intro line, location and time zone (on both Home and Contact), and LinkedIn URL.
-
-## 3. Polish
-
-- [ ] Add a default PNG or JPG sharing image. The home page has none, and project pages use an SVG, which many link previews don't display.
-- [ ] Check the phone layout, and print `/experience/` to PDF to check that too.
-- [ ] Do a final edit to cut anything that doesn't need to be there.
+- [ ] Try a real phone, Safari and Firefox. So far, testing has only been in Chrome, including a narrow window.
+- [ ] Print `/experience/` to PDF and check it. The CV download link will print too.
+- [ ] Do a final read-through to cut anything that doesn't need to be there.
 - [ ] Run the README's placeholder search, which should find nothing.
 
-## 4. Go live
+## 3. Go live
 
-Don't start this section until the content is finished.
+Don't start this section until the sections above are finished.
 
 - [ ] Set the GitHub noreply address as the git email for this repo, rewrite the existing commits to use it, and force-push.
 - [ ] Confirm that no commit on any branch still has the old address.
@@ -40,3 +27,20 @@ Don't start this section until the content is finished.
 - [ ] Set the Pages source to GitHub Actions and re-run the deploy.
 - [ ] Check the live site: every page and link, the 404 page, `sitemap.xml`, and the preview when the link is pasted into LinkedIn.
 - [ ] Add the site URL to your LinkedIn profile.
+
+## Done
+
+- [x] **Decisions:** 20+ years, key employers listed individually, trimmed Expertise areas, three projects (TurnHero, Raid Leader, WOK), and hiding the git email.
+- [x] **Experience:** imported from the CV, newest first.
+- [x] **WOK wording:** "simulator" replaced with "a PC runtime for OpenTV games" on the site.
+- [x] **Typos:** "experieced" and "sparetime" fixed.
+- [x] **Projects:** all three pages written, including Results.
+- [x] **Permissions:** screenshots, metrics, player names and board game art checked.
+- [x] **Screenshot viewer:** one thumbnail per project that opens all its images and GIFs. Image links in page text open one at a time.
+- [x] **External links:** marked with a small arrow.
+- [x] **Expertise:** all sections written, with no placeholders left.
+- [x] **About:** career summary, awards and hobbies written. "How I work" removed.
+- [x] **Small details:** projects intro line, location and time zone, and LinkedIn URL.
+- [x] **Code samples:** none used, so no placeholder blocks are left.
+- [x] **Cleanup:** deleted `placeholder.svg` and `meParty.jpg`.
+- [x] **Wording:** "only available" changed to "open to fully remote positions" on About and Contact, and the job title updated in the site description and page intros.

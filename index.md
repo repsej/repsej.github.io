@@ -2,7 +2,7 @@
 layout: home
 headline: Experienced All Round Game Developer
 lede: Gameplay, prototyping, UI, low-level code and performance.
-description: Jesper Rasmussen is a senior game programmer with more than 20 years of professional experience.
+description: Jesper Rasmussen is an experienced and creative all round game programmer.
 sections: true
 facts:
   - label: Experience

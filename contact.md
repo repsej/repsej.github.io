@@ -3,7 +3,7 @@ title: Contact
 nav_order: 5
 permalink: /contact/
 description: Contact Jesper Rasmussen about fully remote game programming roles.
-lede: I'm only available for fully remote employment.
+lede: I'm open to fully remote positions.
 facts:
   - label: LinkedIn
     value: "[linkedin.com/in/repsej/](https://www.linkedin.com/in/repsej/)"

@@ -1,5 +1,5 @@
 // Opens images in a viewer on top of the page.
-//  - A project's screenshots open as a set you can browse. The page only shows
+//  - A gallery (a project's screenshots, the About page's paintings) opens as a set you can browse. The page only shows
 //    the first thumbnail; the others stay in the page, hidden, as the set's list.
 //  - Any link to an image file in a page's text opens that one image.
 // Without this script, these are all still plain links to their images.
@@ -54,6 +54,7 @@
   });
 
   toArray(document.querySelectorAll(".prose a[href]")).forEach(function (link) {
+    if (link.classList.contains("gallery-item")) return;
     if (!/\.(jpe?g|png|gif|webp)$/i.test(link.pathname)) return;
     link.addEventListener("click", function (event) { open([link], 0, event); });
   });

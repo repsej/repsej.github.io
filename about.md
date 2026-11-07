@@ -5,6 +5,17 @@ permalink: /about/
 description: About Jesper Rasmussen, a creative game developer.
 lede: A creative game developer with more than 20 years of experience.
 sections: true
+paintings:
+  - file: /assets/images/art/waterlilly.jpg
+    alt: Painting of a white water lily on deep blue water
+  - file: /assets/images/art/an-eye.jpeg
+    alt: Photorealistic painting of a close-up eye
+  - file: /assets/images/art/treelimit.jpg
+    alt: Painting of a row of trees by a yellow rapeseed field under a dark, stormy sky
+  - file: /assets/images/art/sacret-closet.jpg
+    alt: Surreal painting of a giant orange wardrobe standing in a stormy landscape
+  - file: /assets/images/art/burning-forest.jpg
+    alt: Painting of a pine forest glowing orange through smoke
 ---
 
 ## Background
@@ -40,6 +51,10 @@ I also worked for Unity in the editor department for half a year.
 - [Painting](/assets/images/about/mePainting.jpg)
 - [Making music](https://soundcloud.com/jesper-rasmussen-16)
 - [Making small games](https://onelifeleft.itch.io/)
+
+## Some paintings
+
+{% include gallery.html shots=page.paintings %}
 
 ## Availability
 

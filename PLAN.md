@@ -1,15 +1,9 @@
 # Portfolio plan
 
-## 1. Fix before launch
+## TODO
 
-## 2. Final checks
-
-## 3. Go live
-
-- [ ] Check the live site: every page and link, the 404 page, `sitemap.xml`, and the preview when the link is pasted into LinkedIn.
 - [ ] Add the site URL to your LinkedIn profile.
-
-## 4. Post live
+- [ ] Add paintings
 
 CV TODO. These are optional, roughly in order of importance:
 

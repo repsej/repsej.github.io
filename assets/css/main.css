@@ -434,6 +434,8 @@ main a[href^="http"]:not([href*="repsej.github.io"])::after {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  margin: 0; /* undo .prose img when a gallery sits in page text */
+  border: 0;
 }
 
 .gallery-count {

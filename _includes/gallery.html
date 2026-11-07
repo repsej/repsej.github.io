@@ -1,4 +1,4 @@
-{%- assign shots = page.screenshots -%}
+{%- assign shots = include.shots | default: page.screenshots -%}
 <ul class="gallery">
 {%- for shot in shots %}
 {%- assign extension = shot.file | split: "." | last | downcase %}

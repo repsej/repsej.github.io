@@ -6,13 +6,6 @@
 
 ## 3. Go live
 
-Don't start this section until the sections above are finished.
-
-- [x] Set the GitHub noreply address as the git email for this repo, rewrite the existing commits to use it, and force-push.
-- [x] Confirm that no commit on any branch still has the old address.
-- [x] Merge `site-scaffold` into `main`. Pages is off, so the deploy run should fail rather than publish anything.
-- [ ] Rename the repo to `repsej.github.io` and make it public.
-- [ ] Set the Pages source to GitHub Actions and re-run the deploy.
 - [ ] Check the live site: every page and link, the 404 page, `sitemap.xml`, and the preview when the link is pasted into LinkedIn.
 - [ ] Add the site URL to your LinkedIn profile.
 

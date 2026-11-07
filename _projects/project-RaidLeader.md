@@ -8,7 +8,6 @@ studio: "Red Zebra Games"
 year: "2012"
 platforms: "iPhone/iPad"
 technology: "Unity & C#"
-image: /assets/images/projects/RaidLeader/realTimeStrategyChallange.jpg
 screenshots:
   - file: /assets/images/projects/RaidLeader/epicBossfights.jpg
     alt: Three heroes surround a boss in an arena as it erupts in a pillar of fire

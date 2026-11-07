@@ -42,7 +42,6 @@ studio: Studio name
 year: 2026
 platforms: PC, PS5
 technology: C++, Vulkan
-image: /assets/images/projects/my-game/screenshot.jpg
 screenshots:
   - file: /assets/images/projects/my-game/screenshot.jpg
     alt: Describe what the screenshot shows
@@ -52,7 +51,7 @@ screenshots:
 ---
 ```
 
-The page shows the first entry in `screenshots` as a small thumbnail. Clicking it opens a viewer where you can browse them all. They can be images or GIFs. `thumb` is optional: use a still image for large GIFs, so the GIF only loads when it's opened and the thumbnail gets a play icon. `image` isn't shown on the page; it's the picture used when the link is shared.
+The page shows the first entry in `screenshots` as a small thumbnail. Clicking it opens a viewer where you can browse them all. They can be images or GIFs. `thumb` is optional: use a still image for large GIFs, so the GIF only loads when it's opened and the thumbnail gets a play icon. When a link is shared, every page uses the same card, `assets/images/about/share.jpg` (set in `_config.yml`).
 
 A link to an image file in any page's text also opens in the viewer, one image at a time: `[Camping](/assets/images/about/meCamping.jpg)`.
 

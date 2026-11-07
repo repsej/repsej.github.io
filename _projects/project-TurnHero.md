@@ -8,7 +8,6 @@ studio: "TurnHero"
 year: "2020 to 2021"
 platforms: "Desktop and Mobile"
 technology: "Unity / C#"
-image: /assets/images/projects/TurnHero/Screen - example background 1.png
 screenshots:
   - file: /assets/images/projects/TurnHero/Screen - my overview.png
     alt: TurnHero's main menu, with Champions of Midgard selected above a row of active games

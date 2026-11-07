@@ -27,16 +27,6 @@ The site runs at <http://localhost:4000>.
 
 Values in front matter can use inline Markdown, so a link can be written as `value: "[My profile](https://example.com)"`.
 
-## Replace placeholders
-
-Missing information is written as `[Bracketed text]` and shown in blue. In Markdown body text it's wrapped in `<mark>`, so remove the tags when you replace it. To list what's left:
-
-```sh
-grep -rnE '\[[^]]+\]([^(]|$)' --include='*.md' --exclude=README.md --exclude-dir=vendor .
-```
-
-Before publishing, also replace or remove `assets/images/projects/placeholder.svg` wherever it's used.
-
 ## Add a project
 
 Add a Markdown file to `_projects/`. The filename becomes the URL, so `my-game.md` is published at `/projects/my-game/`.

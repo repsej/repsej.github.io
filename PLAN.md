@@ -4,7 +4,6 @@ Status on 2026-11-06: the site builds, the deploy check passes, and no placehold
 
 ## 1. Fix before launch
 
-- [ ] **TurnHero quote:** it has "compeditors" and "beatiful": fix them or keep it word for word.
 - [ ] **Sharing image:** the Home and WOK pages have none. Add a default PNG or JPG, and set `image` on WOK.
 - [ ] **CV PDF:** stop calling WOK a simulator, fix the typos ("reimplantation", "an simulator", "Lead", "5'th") and the title that says "(only linkedin)", then re-export it to `assets/jesper-rasmussen-cv.pdf`.
 - [ ] **Prototyping:** the home page lists it, but Expertise has no section for it. Add one or remove it from the list.
@@ -28,19 +27,3 @@ Don't start this section until the sections above are finished.
 - [ ] Check the live site: every page and link, the 404 page, `sitemap.xml`, and the preview when the link is pasted into LinkedIn.
 - [ ] Add the site URL to your LinkedIn profile.
 
-## Done
-
-- [x] **Decisions:** 20+ years, key employers listed individually, trimmed Expertise areas, three projects (TurnHero, Raid Leader, WOK), and hiding the git email.
-- [x] **Experience:** imported from the CV, newest first.
-- [x] **WOK wording:** "simulator" replaced with "a PC runtime for OpenTV games" on the site.
-- [x] **Typos:** "experieced" and "sparetime" fixed.
-- [x] **Projects:** all three pages written, including Results.
-- [x] **Permissions:** screenshots, metrics, player names and board game art checked.
-- [x] **Screenshot viewer:** one thumbnail per project that opens all its images and GIFs. Image links in page text open one at a time.
-- [x] **External links:** marked with a small arrow.
-- [x] **Expertise:** all sections written, with no placeholders left.
-- [x] **About:** career summary, awards and hobbies written. "How I work" removed.
-- [x] **Small details:** projects intro line, location and time zone, and LinkedIn URL.
-- [x] **Code samples:** none used, so no placeholder blocks are left.
-- [x] **Cleanup:** deleted `placeholder.svg` and `meParty.jpg`.
-- [x] **Wording:** "only available" changed to "open to fully remote positions" on About and Contact, and the job title updated in the site description and page intros.

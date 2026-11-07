@@ -1,7 +1,5 @@
 # Portfolio plan
 
-Status on 2026-11-06: the site builds, the deploy check passes, and no placeholders are left. What remains is a few fixes, final checks and going live.
-
 ## 1. Fix before launch
 
 ## 2. Final checks

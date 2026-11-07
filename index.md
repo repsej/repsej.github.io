@@ -1,8 +1,8 @@
 ---
 layout: home
-headline: Experienced All Round Game Developer
-lede: Gameplay, prototyping, UI, low-level code and performance.
-description: Jesper Rasmussen is an experienced and creative all round game programmer.
+headline: Creative Game Developer
+lede: "Gameplay, design and tech: 20+ years of making games feel right."
+description: Jesper Rasmussen is a creative game developer with 20+ years in gameplay, design and tech.
 sections: true
 facts:
   - label: Experience

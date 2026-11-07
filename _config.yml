@@ -31,6 +31,7 @@ defaults:
       path: ""
     values:
       layout: page
+      image: /assets/images/about/meVacation.jpg
   - scope:
       path: ""
       type: projects

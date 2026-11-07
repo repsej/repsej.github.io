@@ -8,6 +8,7 @@ studio: "NDS Denmark"
 year: "2007"
 platforms: "OpenTV & PC"
 technology: "C++, C, Cygwin, SDL, GNU Tools"
+image: /assets/images/wok-build-paths.png
 screenshots:
   - file: /assets/images/wok-build-paths.png
     alt: The two build pipelines

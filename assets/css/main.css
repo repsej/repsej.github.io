@@ -178,7 +178,22 @@ mark {
    Page headers
    ========================================================================== */
 
-.hero { padding-block: clamp(3.5rem, 8vw, 6.5rem) 3.5rem; }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-block: clamp(3.5rem, 8vw, 6.5rem) 3.5rem;
+}
+
+.portrait {
+  flex-shrink: 0;
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 .hero h1, .page-header h1 {
   margin: 0;
@@ -573,6 +588,9 @@ html:has(.viewer[open]) { overflow: hidden; }
   .sections { display: block; }
   .prose.sections > h2 { margin-bottom: 0.75rem; }
   .sections > h2 + * { margin-top: 0; }
+
+  .hero { flex-direction: column-reverse; align-items: stretch; gap: 1.5rem; }
+  .portrait { align-self: flex-start; width: 6rem; height: 6rem; }
 
   .experience-entry { grid-template-columns: minmax(0, 1fr); row-gap: 0.75rem; }
 }

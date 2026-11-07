@@ -1,6 +1,7 @@
 ---
 layout: home
 headline: Creative Game Developer
+portrait: /assets/images/about/meVacation-small.jpg
 lede: "Gameplay, design and tech: 20+ years of making games feel right."
 description: Jesper Rasmussen is a creative game developer with 20+ years in gameplay, design and tech.
 sections: true

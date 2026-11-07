@@ -3,8 +3,11 @@ layout: default
 ---
 <article>
 <header class="hero">
+<div class="hero-text">
 <h1>{{ page.headline }}</h1>
 {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+</div>
+{% if page.portrait %}<img class="portrait" src="{{ page.portrait | relative_url }}" alt="Photo of {{ site.author.name }}" width="160" height="160">{% endif %}
 </header>
 {% if page.facts %}{% include facts.html facts=page.facts %}{% endif %}
 <div class="prose sections">

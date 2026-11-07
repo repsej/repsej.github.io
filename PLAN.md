@@ -4,9 +4,8 @@ Status on 2026-11-06: the site builds, the deploy check passes, and no placehold
 
 ## 1. Fix before launch
 
-- [ ] **Sharing image:** the Home and WOK pages have none. Add a default PNG or JPG, and set `image` on WOK.
+- [x] **Sharing image:** the Home and WOK pages have none. Add a default PNG or JPG, and set `image` on WOK.
 - [ ] **CV PDF:** stop calling WOK a simulator, fix the typos ("reimplantation", "an simulator", "Lead", "5'th") and the title that says "(only linkedin)", then re-export it to `assets/jesper-rasmussen-cv.pdf`.
-- [ ] **Prototyping:** the home page lists it, but Expertise has no section for it. Add one or remove it from the list.
 
 ## 2. Final checks
 

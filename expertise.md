@@ -10,9 +10,9 @@ sections: true
 
 ## Gameplay programming
 
-I made about 15 casual games for OpenTV at NDS Denmark. I was the sole programmer on [Raid Leader](/projects/project-raidleader/) and I've also worked on game logic for Minion Masters, WHAT THE GOLF?, and GoldDigger.
+I made about 15 casual games for OpenTV at NDS Denmark. I was the sole programmer on [Raid Leader](/projects/project-raidleader/) and I've also worked on gameplay for Minion Masters, WHAT THE GOLF?, and GoldDigger.
 
-I also do small games in my spare time. Can't stop making games.
+I also do small games in my spare time. 
 
 ## Prototyping
 

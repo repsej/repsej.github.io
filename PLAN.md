@@ -4,9 +4,6 @@ Status on 2026-11-06: the site builds, the deploy check passes, and no placehold
 
 ## 1. Fix before launch
 
-- [x] **Sharing image:** the Home and WOK pages have none. Add a default PNG or JPG, and set `image` on WOK.
-- [ ] **CV PDF:** stop calling WOK a simulator, fix the typos ("reimplantation", "an simulator", "Lead", "5'th") and the title that says "(only linkedin)", then re-export it to `assets/jesper-rasmussen-cv.pdf`.
-
 ## 2. Final checks
 
 - [ ] Try a real phone, Safari and Firefox. So far, testing has only been in Chrome, including a narrow window.
@@ -26,3 +23,19 @@ Don't start this section until the sections above are finished.
 - [ ] Check the live site: every page and link, the 404 page, `sitemap.xml`, and the preview when the link is pasted into LinkedIn.
 - [ ] Add the site URL to your LinkedIn profile.
 
+## 4. Post live
+
+CV todo. These are optional, roughly in order of importance:
+
+- "WHAT THE GOLF!": I believe the game's title is "WHAT THE GOLF?", with a question mark, and your Expertise page writes it that way. Worth checking.
+- The page break splits NDS Denmark: the first bullet is alone at the bottom of page 1 and the rest continue on page 2. Moving the whole NDS block to page 2, or tightening page 1, would read better.
+- "2025 – 2025" and "2019 – 2019": just "2025" and "2019".
+- "old danish 13-system": capitalize "Danish".
+
+Small wording points:
+
+- "Worked with integrating third party games" could be "Integrated third-party games".
+- "AppStore" is officially "App Store".
+- "Taught new Game Developers" doesn't need the capitals.
+- "a F2P game" reads better as "an F2P game", because F2P is said "eff".
+- "Holte Gymnasium /": there's a double space before the slash. "Matematisk student" is Danish; for non-Danish readers, something like "Upper secondary school (maths and science)" would be clearer.

@@ -7,7 +7,7 @@ description: Professional experience of Jesper Rasmussen, a creative game develo
 lede: More than 20 years of professional game development.
 ---
 
-[Download CV (PDF)](/assets/jesper-rasmussen-cv.pdf)
+[Download CV (PDF)](/assets/jesper-rasmussen-cv.pdf){: download="Jesper Rasmussen - Creative Game Developer.pdf"}
 
 {% include experience-list.html %}
 

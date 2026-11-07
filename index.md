@@ -21,7 +21,6 @@ facts:
 - Gameplay programming
 - Prototyping
 - Low-level programming
-- UI programming
 - Tools and workflows
 - Performance optimization
 {: .ruled-list }

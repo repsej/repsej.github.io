@@ -261,6 +261,7 @@ mark {
 .prose li::marker { color: var(--muted); }
 
 .prose img { display: block; margin-block: 1.5rem; border: 1px solid var(--line); }
+.prose hr { border: 0; border-top: 1px solid var(--line); margin: 1rem 0; }
 
 .prose code {
   padding: 0.1em 0.35em;

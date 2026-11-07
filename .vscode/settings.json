@@ -1,3 +1,5 @@
 {
-  "spellchecker.ignoreWordsList": ["Matematisk", "AppStore"]
+  "spellchecker.ignoreWordsList": ["Matematisk", "AppStore"],
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"]
 }

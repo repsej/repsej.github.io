@@ -2,7 +2,7 @@
 
 Simple portfolio page for a very experienced games programmer.
 
-No nonesens - short and to the point.
+No nonsense - short and to the point.
 
 ## Stack
 

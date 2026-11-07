@@ -51,7 +51,7 @@ We shipped a great game that got very positive reviews from some of the biggest 
 
 - AppSmile: 80/100. "If you've never been into raiding and fantasy battles before, Raid Leader is a great way for new players to learn, though the seasoned vets may look elsewhere to get their fix."
 
-- Pocket Gamer UK. 80/100. "Tough, relentless, and very clever, Raid Leader is more about brain power than brute force, but its meshing of RPG with RTS is one to savour."
+- Pocket Gamer UK. 80/100. "Tough, relentless, and very clever, Raid Leader is more about brain power than brute force, but its meshing of RPG with RTS is one to savor."
 
 [More reviews as listed by Metacritic](https://www.metacritic.com/game/raid-leader/critic-reviews/?platform=ios-iphoneipad)
 

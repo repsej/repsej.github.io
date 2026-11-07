@@ -42,6 +42,6 @@ Assets were downloaded to the client, but all game rules were handled by the ser
 
 ## Results
 
-We made a successfull demo / vertical slice, with some fun playable board games.
+We made a successful demo / vertical slice, with some fun playable board games.
 
 [More info](https://github.com/TurnHero/th-collaboration/blob/main/TurnHero/About.md)

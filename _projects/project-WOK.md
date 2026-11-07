@@ -20,7 +20,7 @@ screenshots:
 
 Developing games for the OpenTV platform at NDS Denmark was a rather tedious affair.
 
-We had old Unix build servers that compiled our games into OpenTV bytecode and broadcast them onto our internal TV network (with MPEG magic). Each developer had an OpenTV developer box (and a TV) on their desk to see whether a change worked.
+We had old Unix build servers that compiled our games into OpenTV byte code and broadcast them onto our internal TV network (with MPEG magic). Each developer had an OpenTV developer box (and a TV) on their desk to see whether a change worked.
 
 The whole process took approximately 10 minutes from making a change in the source code to seeing the result on screen.
 

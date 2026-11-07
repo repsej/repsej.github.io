@@ -27,7 +27,7 @@ I also worked for Unity in the editor department for half a year.
 
 - **Js13kGames 2025:** My original game [Black Cat Squadron](https://onelifeleft.itch.io/black-cat-squadron-directors-cut) got 5th place overall (of 176 entries).
 
-- **Js13kGames 2024:** My original game [The Way of the Dodo](https://onelifeleft.itch.io/the-way-of-the-dodo) got 5th place overall (of 188 entries) and 2nd place in the mobile catagory.
+- **Js13kGames 2024:** My original game [The Way of the Dodo](https://onelifeleft.itch.io/the-way-of-the-dodo) got 5th place overall (of 188 entries) and 2nd place in the mobile category.
 
 - **Google Hash Code 2018:** 103rd of 5,000 teams, participated with two old friends
 

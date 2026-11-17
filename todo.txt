@@ -1,0 +1,15 @@
+TODO:
+
+- Rework https://repsej.github.io/expertise/
+
+
+
+- Use chat to rework passages that suck.
+
+
+
+- More projects:
+  - My AI thing
+  - I made NDS use GameMaker demos instead of written descriptions for communicating wiht the clients.
+  - Dead Again
+  - I uses AI for prototyping today.

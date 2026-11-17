@@ -39,6 +39,7 @@ defaults:
       layout: project
 
 exclude:
+  - todo.txt
   - README.md
   - PLAN.md
   - CLAUDE.md

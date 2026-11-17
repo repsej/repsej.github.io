@@ -12,7 +12,7 @@ sections: true
 
 I made about 15 casual games for OpenTV at NDS Denmark. I was the sole programmer on [Raid Leader](/projects/project-raidleader/) and I've also worked on gameplay for Minion Masters, WHAT THE GOLF?, and GoldDigger.
 
-I also do small games in my spare time. 
+I also do small games and prototypes in my spare time. 
 
 ## Prototyping
 
@@ -27,6 +27,8 @@ At NDS Denmark I became a big fan of GameMaker (the old 8.1 version) - and start
 
 ---
 
+These days I use AI for prototyping.  
+
 At NDS Denmark, I took the initiative to move the company away from describing games in detail in written contracts and towards using prototypes instead.
 
 The written contracts tended to trigger nitpicking and arguments with customers. Somehow, the wording became more important than the games themselves.
@@ -37,7 +39,7 @@ The result was better games and relationships with our customers.
 
 ## Low-level programming
 
-I've always enjoyed the mental puzzle of doing low level programming and really getting the most out of the hardware.
+I've always enjoyed the mental puzzle of doing low level C/C++ programming and really getting the most out of the hardware.
 
 Examples:
 
@@ -62,3 +64,4 @@ I worked on optimization for Minion Masters at BetaDwarf.
 - **Languages:** C#, C, C++, JavaScript, TS
 - **Engine:** Unity
 - **Platforms:** H5, mobiles, OpenTV
+

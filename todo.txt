@@ -1,6 +1,6 @@
 TODO:
 
-- Rework https://repsej.github.io/expertise/
+- Rework https://repsej.github.io/
 
 - Use chat to rework passages that suck.
 

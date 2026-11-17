@@ -4,7 +4,7 @@ nav_title: Expertise
 nav_order: 4
 permalink: /expertise/
 description: Technical expertise of Jesper Rasmussen.
-lede: From gameplay and GUI to low-level debugging and optimization.
+lede: From gameplay and GUI to optimization and low-level debugging.
 sections: true
 ---
 

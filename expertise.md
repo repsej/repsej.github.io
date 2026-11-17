@@ -25,17 +25,12 @@ At NDS Denmark I became a big fan of GameMaker (the old 8.1 version) - and start
 - Prototyping games for clients before starting the real development process.
 - Experimenting with eg "one button" games and other experimental and novel game designs.
 
+I also spearheaded [game prototypes](/projects/project-prototypes/) for client communications, instead of written specs.
+
 ---
 
 These days I use AI for prototyping.  
 
-At NDS Denmark, I took the initiative to move the company away from describing games in detail in written contracts and towards using prototypes instead.
-
-The written contracts tended to trigger nitpicking and arguments with customers. Somehow, the wording became more important than the games themselves.
-
-Instead, we started by building a prototype of the game in just a few days using GameMaker 8.1. We would get feedback from the customer, iterate on the prototype, and once we were both happy with it, implement the game in OpenTV. This final implementation normally took around three months.
-
-The result was better games and relationships with our customers.
 
 ## Low-level programming
 

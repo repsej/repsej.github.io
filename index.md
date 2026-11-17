@@ -21,9 +21,8 @@ facts:
 
 - Gameplay programming
 - Prototyping
-- Low-level programming
+- Optimization: Algorithms & Low-level Programming
 - Tools and workflows
-- Performance optimization
 {: .ruled-list }
 
 ## Selected projects

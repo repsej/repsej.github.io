@@ -32,15 +32,20 @@ I also spearheaded [game prototypes](/projects/project-prototypes/) for client c
 These days I use AI for prototyping.  
 
 
-## Low-level programming
+## Optimization: Algorithms & Low-level Programming
 
-I've always enjoyed the mental puzzle of doing low level C/C++ programming and really getting the most out of the hardware.
+I enjoy the challenge of making games run efficiently. Good optimization starts with choosing the right algorithms and data structures.
+
+I have extensive experience profiling and optimizing games, identifying performance bottlenecks and improving CPU and memory usage. This includes working with garbage collection, memory allocations, draw calls, and other performance-related aspects of game development.
+
+When necessary, I also enjoy going closer to the hardware, using low-level programming techniques to get the most out of the available resources.
 
 Examples:
 
-- At NDS Denmark I wrote about 15 casual games in C - with lots of low level optimizations,
-- I also worked on porting Unity to an interactive television platform and made [WOK](/projects/project-wok/).
-- I did low-level debugging on Minion Masters at BetaDwarf.
+- Minion Masters (BetaDwarf): Worked on performance optimization, focusing on garbage collection, memory usage, and allocations.
+- Unity games: Extensive use of the Unity Profiler to investigate performance issues, including CPU usage, draw calls, garbage collection, and memory consumption.
+- NDS Denmark: Developed approximately 15 casual games in C, writing efficient code while working within the hardware limitations of the target platforms.
+
 
 ## Tools and workflows
 
@@ -49,10 +54,6 @@ At NDS Denmark I made [WOK](/projects/project-wok/), a PC runtime for OpenTV gam
 I also made and maintained many other tools and libraries for our OpenTV development.
 
 I worked on maintaining and developing the Unity Editor at Unity Technologies, and worked on internal libraries and tools at FRVR.
-
-## Performance optimization
-
-I worked on optimization for Minion Masters at BetaDwarf.
 
 ## Languages and tools
 

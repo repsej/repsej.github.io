@@ -2,12 +2,9 @@ TODO:
 
 - Rework https://repsej.github.io/expertise/
 
-
-
 - Use chat to rework passages that suck.
-
-
 
 - More projects:
   - My AI thing
   - Dead Again
+

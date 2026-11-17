@@ -35,9 +35,20 @@ I designed and implemented the Unity client.
 
 ## Technical challenges
 
-Designing the systems that made the games fully data driven.
+### Generic board game engine
 
-Assets were downloaded to the client, but all game rules were handled by the server.
+The goal was to create a generic board game player capable of supporting a wide variety of games without requiring changes to the Unity application for each new game.
+
+The Unity client was designed to render games based on data received from the backend. Adding a new game would primarily involve uploading the required assets and implementing its rules on the server.
+
+### Client-server architecture
+
+I developed the Unity client in collaboration with another programmer responsible for the backend. Together, we designed the communication protocol connecting the two systems.
+
+The backend was responsible for all game logic and state management, while the Unity client handled rendering, player interaction and presentation.
+
+This separation allowed new games to be implemented independently of the Unity client.
+
 
 ## Results
 

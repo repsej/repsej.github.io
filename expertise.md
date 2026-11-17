@@ -34,9 +34,9 @@ These days I use AI for prototyping.
 
 ## Optimization: Algorithms & Low-level Programming
 
-I enjoy the challenge of making games run efficiently. Good optimization starts with choosing the right algorithms and data structures.
+I enjoy the challenge of making games run efficiently. Good optimization starts with choosing the right algorithms and data structures, and understanding their computational complexity.
 
-I have extensive experience profiling and optimizing games, identifying performance bottlenecks and improving CPU and memory usage. This includes working with garbage collection, memory allocations, draw calls, and other performance-related aspects of game development.
+I have extensive experience profiling, debugging and optimizing games, identifying performance bottlenecks and improving CPU and memory usage. This includes investigating garbage collection, memory allocations, draw calls, and other performance-related aspects of game development.
 
 When necessary, I also enjoy going closer to the hardware, using low-level programming techniques to get the most out of the available resources.
 

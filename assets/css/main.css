@@ -415,7 +415,8 @@ main a[href^="http"]:not([href*="repsej.github.io"])::after {
    ========================================================================== */
 
 .gallery {
-  width: 10rem;
+  width: 20rem;
+  max-width: 100%;
   margin: 2.25rem 0 0;
   padding: 0;
   list-style: none;

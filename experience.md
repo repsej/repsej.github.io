@@ -1,5 +1,5 @@
 ---
-title: Professional experience
+title: Professional experience (a selection)
 nav_title: Experience
 nav_order: 2
 permalink: /experience/
@@ -9,6 +9,6 @@ lede: More than 20 years of professional game development.
 
 [Download CV (PDF)](/assets/jesper-rasmussen-cv.pdf){: download="Jesper Rasmussen - Creative Game Developer.pdf"}
 
-{% include experience-list.html %}
+---
 
-(a selection)
+{% include experience-list.html %}

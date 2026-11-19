@@ -9,10 +9,10 @@ year: "2020 to 2021"
 platforms: "Desktop and Mobile"
 technology: "Unity / C#"
 screenshots:
-  - file: /assets/images/projects/TurnHero/Screen - my overview.png
-    alt: TurnHero's main menu, with Champions of Midgard selected above a row of active games
   - file: /assets/images/projects/TurnHero/Screen - example background 1.png
     alt: The card game Combo Fighter in the TurnHero client, with both players' cards and decks on a table
+  - file: /assets/images/projects/TurnHero/Screen - my overview.png
+    alt: TurnHero's main menu, with Champions of Midgard selected above a row of active games
   - file: /assets/images/projects/TurnHero/Gif - move piece.gif
     thumb: /assets/images/projects/TurnHero/move-piece-still.jpg
     alt: A highlighted red game piece being moved onto a board of tiles
@@ -48,7 +48,6 @@ I developed the Unity client in collaboration with another programmer responsibl
 The backend was responsible for all game logic and state management, while the Unity client handled rendering, player interaction and presentation.
 
 This separation allowed new games to be implemented independently of the Unity client.
-
 
 ## Results
 

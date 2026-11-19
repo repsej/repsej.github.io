@@ -2,9 +2,37 @@ TODO:
 
 - Rework https://repsej.github.io/
 
-- Use chat to rework passages that suck.
-
 - More projects:
   - My AI thing
   - Dead Again
 
+
+---
+
+ - Jeg ville putte din about front and center lige under den første experience linje på forsiden. Så er det det først man naturligt læser og skal ikke klikke videre
+
+
+---
+
+
+
+
+ - Du har 4 projekter, men 3 selected - bare list dem alle på forsiden. Du har ikke folks attention i mange minutter og skal fange dem hurtigt
+
+
+
+
+ - About: Det bliver lidt generisk. "I worked on", "great reviews". Husk igen at folk kun kommer til at skimme og ikke nærlæse dig, så gør det nemt for dem at finde infoen. 
+
+ - Så fremhæv dine resultater: "cut our feedback loop from minutes to seconds". Gør det gerne bold, så når jeg kigger på siden så fanger mine øjne hurtigt dine 3-4 største resultater
+
+
+ - Samme gælder dit CV. Det fortæller lige præcis hvor du har arbejdet, men meget lidt om HVAD du har lavet. 
+
+ - Integrated third-party H5 and Unity games with FRVR’s JavaScript SDK, and maintained internal libraries and tools.
+
+ - Er ret kedeligt.
+
+ - Developed and maintained build once, deploy everywhere HTML5 javascript SDK, allowing game developers to focus on game creation only. The SDK handled simultaneous deployment to 10+ platforms (Facebook, wechat, samsung, iOS, ad selection, bidding, showing,  blabla bla (du kan gøre det bedre 🙂 )
+
+Og så prop et stort billede op på dine projekt sider! Et billede er værd 1000 ord 🙂
